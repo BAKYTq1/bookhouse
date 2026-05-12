@@ -1,0 +1,137 @@
+.home {
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin: 0 0 2rem 0;
+  opacity: 0.95;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 2rem 0;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.popularBooks {
+  background-color: var(--color-bg-secondary);
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.viewMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.categories {
+  background-color: var(--color-bg);
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.categoryCard {
+  background-color: var(--color-bg-tertiary);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+
+  h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-primary);
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.promo {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #059669 100%);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.promoContent {
+  max-width: 600px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+
+  p {
+    font-size: 1.125rem;
+    margin: 0 0 2rem 0;
+    opacity: 0.95;
+  }
+}

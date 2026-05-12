@@ -1,0 +1,181 @@
+﻿.warning {
+  background-color: rgba(245, 158, 11, 0.12);
+  border: 1px solid #f59e0b;
+  color: #b45309;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.statCard {
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background-color: var(--color-bg-secondary);
+  padding: 0.8rem;
+
+  strong {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 1.3rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) 1fr;
+  gap: 1.5rem;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background-color: var(--color-bg);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+}
+
+.bookForm {
+  display: grid;
+  gap: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+
+  label {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+}
+
+.textarea,
+.select {
+  width: 100%;
+  border: 2px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 0.875rem 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition: border-color 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.bookList,
+.orderList,
+.userList {
+  display: grid;
+  gap: 1rem;
+}
+
+.bookCard,
+.orderCard,
+.userCard {
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--color-bg-secondary);
+}
+
+.bookCardHeader,
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.bookMeta,
+.muted {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.bookActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.orderItems {
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.userCard {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statusControl {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}

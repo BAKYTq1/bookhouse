@@ -1,0 +1,89 @@
+﻿.adminPage {
+  min-height: calc(100vh - 70px);
+  background-color: var(--color-bg-secondary);
+  padding: 2rem 1rem 4rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 1.5rem;
+  align-items: start;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.titleBlock {
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    color: var(--color-text-secondary);
+  }
+}
+
+.rightNav {
+  position: sticky;
+  top: 86px;
+  background-color: var(--color-bg);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  padding: 1rem;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.rightNavTitle {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.rightNavLinks {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.rightNavLink {
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.6rem;
+  color: var(--color-text-primary);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-border);
+  }
+}
+
+.activeLink {
+  background-color: rgba(37, 99, 235, 0.12);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
